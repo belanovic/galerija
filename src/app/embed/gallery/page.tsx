@@ -11,9 +11,8 @@ const embedGalleryImages = [
 
 export default function GalleryEmbedPage() {
   return (
-    // Ensure the embed page takes full width and height of the iframe
-    // Apply background color to match the theme for consistency
-    <div className="w-full h-screen bg-background flex items-center justify-center p-0 m-0 overflow-hidden">
+    <div className="bg-background p-0 m-0 overflow-hidden">
+      {/* The PhotoGallery component handles its own max-width and centering */}
       <PhotoGallery initialImages={embedGalleryImages} />
     </div>
   );

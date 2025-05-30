@@ -11,8 +11,8 @@ const initialGalleryImages = [
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen w-full bg-background flex items-center justify-center p-0 m-0">
-      {/* The PhotoGallery component itself has max-w-3xl and mx-auto for its own sizing and centering */}
+    <div className="bg-background p-0 m-0">
+      {/* The PhotoGallery component handles its own max-width and centering */}
       <PhotoGallery initialImages={initialGalleryImages} />
     </div>
   );
