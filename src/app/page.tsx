@@ -11,16 +11,12 @@ const initialGalleryImages = [
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="container mx-auto py-8 px-4 flex-grow flex flex-col items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background">
+      <main className="container mx-auto py-8 px-4 flex-grow flex flex-col items-center justify-center w-full">
         <section className="w-full">
           <PhotoGallery initialImages={initialGalleryImages} />
         </section>
       </main>
-      
-      <footer className="text-center text-muted-foreground py-6 border-t border-border">
-        <p>&copy; {new Date().getFullYear()} PhotoFlow Gallery. All rights reserved.</p>
-      </footer>
     </div>
   );
 }
