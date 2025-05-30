@@ -1,4 +1,4 @@
 import { config } from 'dotenv';
 config();
 
-import '@/ai/flows/smart-crop-and-scale.ts';
+// Removed import for smart-crop-and-scale.ts as the file is deleted.

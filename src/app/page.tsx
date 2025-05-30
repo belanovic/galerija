@@ -24,7 +24,7 @@ export default function HomePage() {
         </header>
 
         <section className="w-full py-6">
-          <PhotoGallery initialImages={initialGalleryImages} enableAiProcessing={true} />
+          <PhotoGallery initialImages={initialGalleryImages} />
         </section>
 
         <section className="w-full py-6">

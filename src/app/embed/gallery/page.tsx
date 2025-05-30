@@ -14,8 +14,7 @@ export default function GalleryEmbedPage() {
     // Ensure the embed page takes full width and height of the iframe
     // Apply background color to match the theme for consistency
     <div className="w-full h-screen bg-background flex items-center justify-center p-0 m-0 overflow-hidden">
-      {/* Set enableAiProcessing to false if AI processing is too slow/problematic for embed, or true to match main */}
-      <PhotoGallery initialImages={embedGalleryImages} enableAiProcessing={true} />
+      <PhotoGallery initialImages={embedGalleryImages} />
     </div>
   );
 }
