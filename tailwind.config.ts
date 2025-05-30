@@ -55,15 +55,16 @@ export default {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
+        // These sidebar color mappings ensure the Sidebar component uses its dedicated CSS variables from globals.css
         sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))',
+          DEFAULT: 'hsl(var(--sidebar-background-specific))', // maps to --sidebar-background-specific
+          foreground: 'hsl(var(--sidebar-foreground-specific))',
+          primary: 'hsl(var(--sidebar-primary-specific))',
+          'primary-foreground': 'hsl(var(--sidebar-primary-foreground-specific))',
+          accent: 'hsl(var(--sidebar-accent-specific))',
+          'accent-foreground': 'hsl(var(--sidebar-accent-foreground-specific))',
+          border: 'hsl(var(--sidebar-border-specific))',
+          ring: 'hsl(var(--sidebar-ring-specific))',
         },
       },
       borderRadius: {
